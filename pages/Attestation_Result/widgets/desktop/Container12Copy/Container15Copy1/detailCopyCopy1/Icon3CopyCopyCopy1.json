@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 3,
+  "boxShadow": "none",
+  "buttonColor": "#FF4A43",
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "XCircle",
+  "iconSize": 24,
+  "iconWeight": "regular",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "d97rmuk54s",
+  "leftColumn": 2,
+  "minWidth": 16,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 3,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "originalBottomRow": 24,
+  "originalTopRow": 21,
+  "parentColumnSpace": 19.4375,
+  "parentId": "m50iwe17m2",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 6,
+  "toolTipPosition": "bottom",
+  "topRow": 0,
+  "type": "M4_ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "zh7ibcvpmq",
+  "widgetName": "Icon3CopyCopyCopy1"
+}

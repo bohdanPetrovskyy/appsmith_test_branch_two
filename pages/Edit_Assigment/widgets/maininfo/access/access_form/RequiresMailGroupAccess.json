@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 29,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( utils.getContentItemByKey(utils.contentItemsKey.RequiresMailGroupAccess).map(item =>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\titem.Value)))(RequiresMailGroupAccess.options, RequiresMailGroupAccess.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "l9tvuqn3ul",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Включити до відповідних поштових груп",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 29,
+  "originalTopRow": 22,
+  "parentColumnSpace": 19.152488708496094,
+  "parentId": "e2asc759f4",
+  "parentRowSpace": 10,
+  "placeholderText": "Оберіть поштові групи",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 32,
+  "serverSideFiltering": false,
+  "sourceData": "{{ \n(() => {\n\tconst seen = new Set();\n\treturn utils.getDictionaryByName(\"MailGroup\")\n\t\t.filter(mail => mail.ItemName !== \"\")\n\t\t.sort((a, b) => a.ItemName.split('@')[1].localeCompare(b.ItemName.split('@')[1]))\n\t\t.filter(mail => {\n\t\tif (seen.has(mail.ItemName)) return false;\n\t\tseen.add(mail.ItemName);\n\t\treturn true;\n\t})\n\t\t.map(p => ({\n\t\tlabel: p.ItemName,\n\t\tvalue: p.ItemName\n\t}));\n})() \n}}",
+  "topRow": 22,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "7tkvb2tt88",
+  "widgetName": "RequiresMailGroupAccess"
+}
