@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 2,
+  "boxShadow": "none",
+  "buttonColor": "#3b82f6",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconName": "CalendarBlank",
+  "iconSize": 16,
+  "iconWeight": "regular",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wgptxhrrs4",
+  "leftColumn": 17,
+  "minWidth": 16,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 27,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 15.1630859375,
+  "parentId": "peth214dv5",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 18,
+  "toolTipPosition": "bottom",
+  "topRow": 1,
+  "type": "M4_ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "7neyu1qjb8",
+  "widgetName": "Icon1Copy2CopyCopyCopyCopy2"
+}

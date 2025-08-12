@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 37,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( utils.getContentItemByKey(utils.contentItemsKey.RequiresAccessServer).map(item =>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\titem.Value)))(RequiresAccessServer.options, RequiresAccessServer.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "vxpr8s5vbl",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Надати відповідний доступ до серверів",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 37,
+  "originalTopRow": 30,
+  "parentColumnSpace": 20,
+  "parentId": "e2asc759f4",
+  "parentRowSpace": 10,
+  "placeholderText": "Оберіть сервери",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 32,
+  "serverSideFiltering": false,
+  "sourceData": "{{utils.getDictionaryByName(\"AccessServer\").filter(i => i.ItemName !== \"\").sort((a,b) => a.ItemName.localeCompare(b.ItemName)).map(p => ({ \n    label: p.ItemName, \n    value: p.ItemName \n  }))}}",
+  "topRow": 30,
+  "type": "MULTI_SELECT_WIDGET_V2",
+  "version": 1,
+  "widgetId": "qkqtwxbvcg",
+  "widgetName": "RequiresAccessServer"
+}

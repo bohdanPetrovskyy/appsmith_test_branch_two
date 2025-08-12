@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "688f7c8487c169738493a99c_45fe481f-f6dd-456e-8a05-f56669e5da8c",
+  "id": "Edit_User_switcher",
+  "unpublishedCollection": {
+    "name": "switcher",
+    "pageId": "Edit_User",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "listKey",
+        "value": "null"
+      },
+      {
+        "name": "pageName",
+        "value": "''"
+      }
+    ]
+  }
+}

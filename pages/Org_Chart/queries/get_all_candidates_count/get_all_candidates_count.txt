@@ -1,0 +1,7 @@
+query GetNewEmployees {
+  count: people_person_v0_aggregate(where: {_not: {person_festcloudid_employee: {}}}) {
+    aggregate {
+      count
+    }
+  }
+}

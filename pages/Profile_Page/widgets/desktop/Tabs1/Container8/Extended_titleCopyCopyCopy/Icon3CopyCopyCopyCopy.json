@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 2,
+  "boxShadow": "none",
+  "buttonColor": "#5D9AFF",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hoverButtonColor": "",
+  "iconName": "Certificate",
+  "iconSize": 24,
+  "iconWeight": "regular",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "d97rmuk54s",
+  "leftColumn": 1,
+  "minWidth": 16,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 3,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 19.4375,
+  "parentId": "vppys2k295",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 2,
+  "toolTipPosition": "bottom",
+  "topRow": 1,
+  "type": "M4_ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "14v3dad9fz",
+  "widgetName": "Icon3CopyCopyCopyCopy"
+}

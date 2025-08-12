@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "688f7c8487c169738493a99c_92c22659-e6a9-48a6-9aaf-a4731256cc65",
+  "id": "Edit_User_courses",
+  "unpublishedCollection": {
+    "name": "courses",
+    "pageId": "Edit_User",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "formCounter",
+        "value": "0"
+      }
+    ]
+  }
+}

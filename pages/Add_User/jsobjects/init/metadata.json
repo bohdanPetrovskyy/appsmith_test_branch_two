@@ -1,0 +1,76 @@
+{
+  "gitSyncId": "688f7c8487c169738493a99c_a8389b11-2e60-412a-a35e-c6210263adbc",
+  "id": "Add_User_init",
+  "unpublishedCollection": {
+    "name": "init",
+    "pageId": "Add_User",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "isPhoneValid",
+        "value": "false"
+      },
+      {
+        "name": "isMyPage",
+        "value": "appsmith.URL.queryParams.isMyPage"
+      },
+      {
+        "name": "storage",
+        "value": "'internal'"
+      },
+      {
+        "name": "dismissalEmployee",
+        "value": "null"
+      },
+      {
+        "name": "assignmentEmployee",
+        "value": "null"
+      },
+      {
+        "name": "affiliationEmployee",
+        "value": "null"
+      },
+      {
+        "name": "employeeFestCloudId",
+        "value": "appsmith.URL.queryParams.employeeFestCloudId"
+      },
+      {
+        "name": "existingID",
+        "value": "''"
+      },
+      {
+        "name": "phoneNumber",
+        "value": "''"
+      },
+      {
+        "name": "title",
+        "value": "''"
+      },
+      {
+        "name": "description",
+        "value": "''"
+      },
+      {
+        "name": "buttonLeft",
+        "value": "''"
+      },
+      {
+        "name": "buttonRight",
+        "value": "''"
+      },
+      {
+        "name": "willBeNewPerson",
+        "value": "false"
+      },
+      {
+        "name": "Profile_PageLink",
+        "value": "\"/uk/workspaces/7afcaeba-a984-453e-8bec-5b7df168403c/2ef74609-40bb-4657-9527-ad12bd4a45b6\""
+      },
+      {
+        "name": "link",
+        "value": "\"https://meta4-dev.srv.festcloud.ai\""
+      }
+    ]
+  }
+}

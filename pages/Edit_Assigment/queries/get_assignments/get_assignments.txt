@@ -1,0 +1,19 @@
+query check($id: String!) {
+  assignments:people_assignment_v0(where: {
+    _and: [
+      {assignment_employeefestcloudid_employee: {FestCloudID: {_eq: $id}}}
+      {assignment_workgroupfestcloudid_workgroup: {StructureType: {_eq: "Організаційна структура"}}}
+    ]
+  }) {
+		Role
+    JobTitle
+		FestCloudID
+		position:assignment_positionfestcloudid_position{
+      PositionName
+    }
+		workgroup:assignment_workgroupfestcloudid_workgroup{
+			FestCloudID
+      Name
+    }
+  }
+}

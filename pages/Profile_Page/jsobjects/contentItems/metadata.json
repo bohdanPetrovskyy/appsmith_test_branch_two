@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "688f7c8487c169738493a99c_e69b7b02-2522-4a97-ab9b-630a19f245a3",
+  "id": "Profile_Page_contentItems",
+  "unpublishedCollection": {
+    "name": "contentItems",
+    "pageId": "Profile_Page",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "attestationNeedFor",
+        "value": "[\"Офіціант\", \"Кухар\", \"Помічник офіціанта\", \"Касир торговельного залу\", \"Продавець непродовольчих товарів\", \"Бармен\", \"Бариста\", \"Заготівельник продуктів і сировини\", \"Кондитер\", \"Кондитер нічної зміни\", \"Кухар гарячого цеху\", \"Кухар холодного цеху\", \"Пекар\", \"Помічник кондитера\", \"Помічник кухаря\", \"Стюард\", \"Сомельє\"]"
+      },
+      {
+        "name": "adaptationItems",
+        "value": "[]"
+      },
+      {
+        "name": "attestationItems",
+        "value": "[]"
+      },
+      {
+        "name": "dismissalItems",
+        "value": "[]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+query GetEmployeesInWorkgroupWithCorrectCount(
+  $where: people_assignment_v0_bool_exp!,
+    $limit: Int!,
+) {
+  people_assignment_v0(where: $where, limit: $limit) {
+    FestCloudID
+    EmployeeFestCloudID
+    PositionFestCloudID
+    WorkgroupFestCloudID
+        assignment_positionfestcloudid_position {
+      PositionName
+    }
+        assignment_workgroupfestcloudid_workgroup{
+      Name
+    }
+    assignment_employeefestcloudid_employee {
+      FestCloudID
+      PhotoLink
+      Stage
+      employee_festcloudid_person {
+        Name
+        FamilyName
+        MiddleName
+        person_festcloudid_principal {
+          WorkEmail: contact_principalfestcloudid_array(
+            where: { EmailType: { _eq: "Work" } },
+            distinct_on: Email
+          ) {
+            Email
+            FestCloudID
+          }
+          WorkPhone: contact_principalfestcloudid_array(
+            where: { PhoneType: { _eq: "Work" } },
+            distinct_on: PhoneNumber
+          ) {
+            PhoneNumber
+            FestCloudID
+          }
+          PersonalEmail: contact_principalfestcloudid_array(
+            where: { EmailType: { _eq: "Personal" } },
+            distinct_on: Email
+          ) {
+            Email
+            FestCloudID
+          }
+          PersonalPhone: contact_principalfestcloudid_array(
+            where: { PhoneType: { _eq: "Personal" } },
+            distinct_on: PhoneNumber
+          ) {
+            PhoneNumber
+            FestCloudID
+          }
+        }
+      }
+    }
+        assignment_festcloudid_assignmentext {
+      Stage
+    }
+  }
+}

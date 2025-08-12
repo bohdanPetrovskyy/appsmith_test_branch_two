@@ -1,0 +1,20 @@
+query GetAllManagers($workgroupFestCloudID: String!) {
+  peopleAssignment:people_assignment_v0(
+    where: {
+      _or: [
+        { Role: { _eq: "manager" }},
+				{ WorkgroupFestCloudID: {_eq: $workgroupFestCloudID}}
+      ]
+    }) 
+  {	
+	  EmployeeFestCloudID
+    FestCloudID
+		assignmentEmployee:assignment_employeefestcloudid_employee{
+      employeeInfo:employee_festcloudid_person{
+        Name
+        FamilyName
+				FestCloudID
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "activeColor": "#1762de",
+  "align": "flex-start",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 22,
+  "chipSize": "SMALL",
+  "chipVariant": "OUTLINED",
+  "color": "#1762de",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "errorText": "",
+  "helperText": "",
+  "hoverColor": "#1762de",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{currentItem.assignment_workgroupfestcloudid_workgroup?.Name !== null || currentItem.assignment_workgroupfestcloudid_workgroup?.Name !== undefined}}",
+  "key": "kx0g65j0v6",
+  "label": "Label",
+  "labelPosition": "Right",
+  "labelTextColor": "#212121",
+  "leftColumn": 13,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 48,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 19.25,
+  "parentId": "rrpwthzp8m",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "text": "{{currentItem.assignment_workgroupfestcloudid_workgroup?.Name}}",
+  "topRow": 19,
+  "type": "M4_CHIP_WIDGET",
+  "version": 1,
+  "widgetId": "1nu42sgkjs",
+  "widgetName": "assignmentWorkgroupCopyCopy"
+}

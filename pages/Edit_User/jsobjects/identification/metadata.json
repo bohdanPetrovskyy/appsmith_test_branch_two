@@ -1,0 +1,32 @@
+{
+  "gitSyncId": "688f7c8487c169738493a99c_d9265531-f9d5-40e1-b615-e4d20c8b71b3",
+  "id": "Edit_User_identification",
+  "unpublishedCollection": {
+    "name": "identification",
+    "pageId": "Edit_User",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "beforeData",
+        "value": "null"
+      },
+      {
+        "name": "isNew",
+        "value": "false"
+      },
+      {
+        "name": "isResidence",
+        "value": "false"
+      },
+      {
+        "name": "isRegistration",
+        "value": "false"
+      },
+      {
+        "name": "isCustomer",
+        "value": "false"
+      }
+    ]
+  }
+}

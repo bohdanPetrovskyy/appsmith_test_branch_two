@@ -1,0 +1,52 @@
+mutation Update(
+  $personId: String!, 
+  $dataIdentification: people_identificationdata_v0_set_input,
+  $dataRegistration: people_address_v0_set_input,
+  $dataResidence: people_address_v0_set_input,
+  $dataCustomer: people_customer_v0_set_input,
+) {
+  update_people_customer_v0(where: {
+    FestCloudID: {_eq: $personId}
+  }, _set: $dataCustomer) {
+    returning{
+      LoyaltyCard
+    }
+    affected_rows
+  }
+  identification:update_people_identificationdata_v0(where: {
+    PersonFestCloudID: {_eq: $personId}
+  }, _set: $dataIdentification) {
+    affected_rows
+    returning {
+      IndividualTaxpayerNumber
+      NationalID
+      MilitaryRegistration
+    }
+  }
+  registration:update_people_address_v0(where: {
+    identificationdata_registrationaddressfestcloudid_array: {
+      PersonFestCloudID: {_eq: $personId}
+    }}, _set: $dataRegistration) {
+    affected_rows
+    returning{
+      Country
+      BuildingNumber
+      Apartment
+      Street
+      PostalCode
+    }
+  }
+  residence:update_people_address_v0(where: {
+    identificationdata_residenceaddressfestcloudid_array: {
+      PersonFestCloudID: {_eq: $personId}
+    }}, _set: $dataResidence) {
+    affected_rows
+    returning{
+      Country
+      BuildingNumber
+      Apartment
+      Street
+      PostalCode
+    }
+  }
+}

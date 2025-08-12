@@ -1,0 +1,198 @@
+{
+  "activeItemColor": "#E3EEFF",
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "backgroundColorActive": "transparent",
+  "backgroundColorDisabled": "transparent",
+  "backgroundColorHover": "transparent",
+  "borderColor": "transparent",
+  "borderColorActive": "transparent",
+  "borderColorDisabled": "transparent",
+  "borderColorHover": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "color": "#585c60",
+  "colorActive": "#d53939",
+  "colorDisabled": "#585c60",
+  "colorHover": "#d53939",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "menuItems.menuItem1.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem1.isDisabled"
+    },
+    {
+      "key": "menuItems.menuItem11s2wekoho.isVisible"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem1.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem1.isDisabled"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem11s2wekoho.onClick"
+    },
+    {
+      "key": "menuItems.menuItem11s2wekoho.isVisible"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "menuItems.menuItem2.isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem11s2wekoho.onClick"
+    }
+  ],
+  "hoverItemColor": "#EEF4FF",
+  "iconAlign": "left",
+  "iconName": "DotsThreeCircle",
+  "iconSize": 24,
+  "iconWeight": "regular",
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{SecurityService.userPermissions?.includes(SecurityService.permissions.assignment_edit) && !init.isMyPage ? true : false}}",
+  "key": "1ev4bjrrth",
+  "label": "",
+  "leftColumn": 61,
+  "menuColor": "transparent",
+  "menuItems": {
+    "menuItem1": {
+      "backgroundColor": "#ffffff",
+      "backgroundColorActive": "#e3eeff",
+      "backgroundColorDisabled": "#f1f1f1",
+      "backgroundColorHover": "#eef4ff",
+      "color": "#212121",
+      "colorActive": "#212121",
+      "colorDisabled": "rgba(24, 24, 24, 0.4)",
+      "colorHover": "#212121",
+      "iconName": "PencilSimple",
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": "{{get_all_assignment.data.data.people_assignment_v0[0].assignment_festcloudid_assignmentext.Stage==='Ex-Employed'}}",
+      "isVisible": "{{get_all_assignment.data?.data?.people_assignment_v0[0]?.assignment_workgroupfestcloudid_workgroup?.StructureType === 'Організаційна структура' && (appsmith.store.userRole === 'admin' || appsmith.store.userRole === 'superAdmin')}}",
+      "label": "Редагувати ",
+      "onClick": "{{utils.handleNavigate(\"Edit_Assigment\", {\n    employeeFestCloudId: get_all_assignment?.data?.data?.people_assignment_v0[0].EmployeeFestCloudID,\n    selectedAssigmentId: get_all_assignment?.data?.data?.people_assignment_v0[0].FestCloudID\n})}}",
+      "textColor": "#212121",
+      "widgetId": ""
+    },
+    "menuItem11s2wekoho": {
+      "backgroundColor": "#ffffff",
+      "backgroundColorActive": "#e3eeff",
+      "backgroundColorDisabled": "#f1f1f1",
+      "backgroundColorHover": "#eef4ff",
+      "color": "#212121",
+      "colorActive": "#212121",
+      "colorDisabled": "rgba(24, 24, 24, 0.4)",
+      "colorHover": "#212121",
+      "iconName": "Star",
+      "id": "menuItem11s2wekoho",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": "{{utils.starState(get_all_assignment?.data?.data?.people_assignment_v0[0].assignment_festcloudid_assignmentext.Type).isActive}}",
+      "label": "Зробити основним",
+      "onClick": "{{utils.toggleActiveAssignment(get_all_assignment?.data?.data?.people_assignment_v0[0].FestCloudID)}}",
+      "widgetId": "e36guzzesw"
+    },
+    "menuItem2": {
+      "backgroundColor": "#ffffff",
+      "backgroundColorActive": "#e3eeff",
+      "backgroundColorDisabled": "#f1f1f1",
+      "backgroundColorHover": "#eef4ff",
+      "color": "#212121",
+      "colorActive": "#212121",
+      "colorDisabled": "rgba(24, 24, 24, 0.4)",
+      "colorHover": "#212121",
+      "iconName": "Flag",
+      "id": "menuItem2",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": "{{get_all_assignment?.data?.data?.people_assignment_v0[0].assignment_festcloudid_assignmentext?.Stage !== \"OffboardingPending\" && get_all_assignment?.data?.data?.people_assignment_v0[0].assignment_festcloudid_assignmentext?.Stage !== \"Ex-Employed\"}}",
+      "label": "Завершити співпрацю",
+      "onClick": "{{utils.handleNavigate(\"Dismissal\", {\"FestCloudID\": get_all_assignment.data.data.people_assignment_v0[0].FestCloudID})}}",
+      "textColor": "#212121",
+      "widgetId": ""
+    },
+    "menuItem6ebpsx64xr": {
+      "backgroundColor": "#ffffff",
+      "backgroundColorActive": "#E3EEFF",
+      "backgroundColorDisabled": "#F1F1F1",
+      "backgroundColorHover": "#EEF4FF",
+      "color": "#212121",
+      "colorActive": "#212121",
+      "colorDisabled": "#18181866",
+      "colorHover": "#212121",
+      "id": "menuItem6ebpsx64xr",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "Вимкнути основне",
+      "widgetId": "05xz9jt3wq"
+    },
+    "menuItemapzfgk15sn": {
+      "backgroundColor": "#ffffff",
+      "backgroundColorActive": "#E3EEFF",
+      "backgroundColorDisabled": "#F1F1F1",
+      "backgroundColorHover": "#EEF4FF",
+      "color": "#212121",
+      "colorActive": "#212121",
+      "colorDisabled": "#18181866",
+      "colorHover": "#212121",
+      "id": "menuItemapzfgk15sn",
+      "index": 4,
+      "isDisabled": false,
+      "isVisible": false,
+      "label": "Подати в ротацію",
+      "widgetId": "nwig8po6lt"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 12.875,
+  "parentId": "sv4xge7hn9",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "textColor": "#585c60",
+  "topRow": 1,
+  "type": "M4_MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "26vi30pxyd",
+  "widgetName": "MenuButton2CopyCopy"
+}

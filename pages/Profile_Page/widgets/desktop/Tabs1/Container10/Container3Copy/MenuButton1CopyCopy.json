@@ -1,0 +1,165 @@
+{
+  "activeItemColor": "#E3EEFF",
+  "animateLoading": true,
+  "backgroundColor": "transparent",
+  "backgroundColorActive": "transparent",
+  "backgroundColorDisabled": "transparent",
+  "backgroundColorHover": "transparent",
+  "borderColor": "transparent",
+  "borderColorActive": "transparent",
+  "borderColorDisabled": "transparent",
+  "borderColorHover": "transparent",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "color": "#585c60",
+  "colorActive": "#d53939",
+  "colorDisabled": "#585c60",
+  "colorHover": "#d53939",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "menuItems.menuItem1.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem1.isDisabled"
+    },
+    {
+      "key": "menuItems.menuItemd4n1mpe64q.isVisible"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "menuItems.menuItemnza5wbqxtx.isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem1.isVisible"
+    },
+    {
+      "key": "menuItems.menuItem1.isDisabled"
+    },
+    {
+      "key": "menuItems.menuItemnza5wbqxtx.onClick"
+    },
+    {
+      "key": "menuItems.menuItemd4n1mpe64q.onClick"
+    },
+    {
+      "key": "menuItems.menuItemd4n1mpe64q.isVisible"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "menuItems.menuItemnza5wbqxtx.isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItemnza5wbqxtx.onClick"
+    },
+    {
+      "key": "menuItems.menuItemd4n1mpe64q.onClick"
+    }
+  ],
+  "hoverItemColor": "#EEF4FF",
+  "iconAlign": "left",
+  "iconName": "DotsThreeCircle",
+  "iconSize": 24,
+  "iconWeight": "regular",
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{SecurityService.userPermissions?.includes(SecurityService.permissions.assignment_edit) && !init.isMyPage ? true : false}}",
+  "key": "09yjes9ltk",
+  "label": "",
+  "leftColumn": 61,
+  "menuColor": "transparent",
+  "menuItems": {
+    "menuItem1": {
+      "backgroundColor": "#ffffff",
+      "backgroundColorActive": "#e3eeff",
+      "backgroundColorDisabled": "#f1f1f1",
+      "backgroundColorHover": "#eef4ff",
+      "color": "#212121",
+      "colorActive": "#212121",
+      "colorDisabled": "rgba(24, 24, 24, 0.4)",
+      "colorHover": "#212121",
+      "iconName": "PencilSimple",
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": "{{get_all_assignment.data.data.people_assignment_v0[1].assignment_festcloudid_assignmentext.Stage==='Ex-Employed'}}",
+      "isVisible": "{{get_all_assignment.data?.data?.people_assignment_v0[1]?.assignment_workgroupfestcloudid_workgroup?.StructureType === 'Організаційна структура' && (appsmith.store.userRole === 'admin' || appsmith.store.userRole === 'superAdmin')}}",
+      "label": "Редагувати ",
+      "onClick": "{{utils.handleNavigate(\"Edit_Assigment\", {\n    employeeFestCloudId: get_all_assignment?.data?.data?.people_assignment_v0[1].EmployeeFestCloudID,\n    selectedAssigmentId: get_all_assignment?.data?.data?.people_assignment_v0[1].FestCloudID\n})}}",
+      "textColor": "#212121",
+      "widgetId": ""
+    },
+    "menuItemd4n1mpe64q": {
+      "backgroundColor": "#ffffff",
+      "backgroundColorActive": "#e3eeff",
+      "backgroundColorDisabled": "#f1f1f1",
+      "backgroundColorHover": "#eef4ff",
+      "color": "#212121",
+      "colorActive": "#212121",
+      "colorDisabled": "rgba(24, 24, 24, 0.4)",
+      "colorHover": "#212121",
+      "iconName": "Star",
+      "id": "menuItemd4n1mpe64q",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": "{{utils.starState(get_all_assignment?.data?.data?.people_assignment_v0[1].assignment_festcloudid_assignmentext.Type).isActive}}",
+      "label": "Зробити основним",
+      "onClick": "{{utils.toggleActiveAssignment(get_all_assignment?.data?.data?.people_assignment_v0[1]?.FestCloudID)}}",
+      "widgetId": "vr9dqvol4w"
+    },
+    "menuItemnza5wbqxtx": {
+      "backgroundColor": "#ffffff",
+      "backgroundColorActive": "#e3eeff",
+      "backgroundColorDisabled": "#f1f1f1",
+      "backgroundColorHover": "#eef4ff",
+      "color": "#212121",
+      "colorActive": "#212121",
+      "colorDisabled": "rgba(24, 24, 24, 0.4)",
+      "colorHover": "#212121",
+      "iconName": "Flag",
+      "id": "menuItemnza5wbqxtx",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": "{{get_all_assignment?.data?.data?.people_assignment_v0[1].assignment_festcloudid_assignmentext?.Stage !== \"OffboardingPending\" && get_all_assignment?.data?.data?.people_assignment_v0[1].assignment_festcloudid_assignmentext?.Stage !== \"Ex-Employed\"}}",
+      "label": "Завершити співпрацю",
+      "onClick": "{{utils.handleNavigate(\"Dismissal\", {\"FestCloudID\": get_all_assignment.data.data.people_assignment_v0[1].FestCloudID})}}",
+      "widgetId": "4esm7i40sc"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 59,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 23.921875,
+  "parentId": "zzuf7mr0tr",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "textColor": "#585c60",
+  "topRow": 1,
+  "type": "M4_MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "vlz0rhfy6a",
+  "widgetName": "MenuButton1CopyCopy"
+}

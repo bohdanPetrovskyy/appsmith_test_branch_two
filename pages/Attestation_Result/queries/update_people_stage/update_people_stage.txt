@@ -1,0 +1,8 @@
+mutation changeStage($where: people_assignmentext_v0_bool_exp!, $stage: String!) {
+  update_people_assignmentext_v0(
+    where: $where,
+    _set: { Stage: $stage }
+  ) {
+    affected_rows
+  }
+}

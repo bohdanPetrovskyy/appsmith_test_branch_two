@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "688f7c8487c169738493a99c_de211088-1412-4a01-b579-f4299af0305f",
+  "id": "Edit_User_additionalinfo",
+  "unpublishedCollection": {
+    "name": "additionalinfo",
+    "pageId": "Edit_User",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "beforeData",
+        "value": "null"
+      },
+      {
+        "name": "isNew",
+        "value": "false"
+      }
+    ]
+  }
+}

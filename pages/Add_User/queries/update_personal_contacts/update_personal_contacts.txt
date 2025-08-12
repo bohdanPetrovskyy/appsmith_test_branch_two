@@ -1,0 +1,14 @@
+mutation Update(
+  $id: String!,
+  $dataContact: people_contact_v0_set_input
+){
+  update_people_contact_v0(where: {
+    _and: {
+      PrincipalFestCloudID: {_eq: $id}
+      EmailType: {_eq: "Personal"}
+      PhoneType: {_eq: "Personal"}
+    }
+  }, _set: $dataContact) {
+    affected_rows
+  }
+}

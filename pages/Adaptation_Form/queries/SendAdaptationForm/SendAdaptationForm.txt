@@ -1,0 +1,4 @@
+{
+    "Category": "CheckListAdaptation",
+    "AssignmentFestCloudID": {{init.assigmentId}}
+}

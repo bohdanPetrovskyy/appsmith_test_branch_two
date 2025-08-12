@@ -1,0 +1,48 @@
+mutation Update(
+  $personId: String!, 
+  $dataPerson: people_person_v0_set_input,
+  $dataContact: people_contact_v0_set_input,
+  $dataIdentification: people_identificationdata_v0_set_input,
+  $dataChild: people_child_v0_set_input
+){
+  update_people_person_v0(where: {
+    FestCloudID: {_eq: $personId}
+    }, _set: $dataPerson){
+    affected_rows
+		returning {
+			MiddleName
+			Gender
+		}
+  }
+  update_people_contact_v0(where: {
+    _and: [
+      {PrincipalFestCloudID: {_eq: $personId}}
+      {EmailType: {_eq: "Personal"}}
+      {PhoneType: {_eq: "Personal"}}
+    ]
+  }, _set: $dataContact){
+    affected_rows
+		returning {
+				Email
+				PhoneNumber
+		}
+  }
+  update_people_identificationdata_v0(where: {
+    PersonFestCloudID: {_eq: $personId}
+  }, _set: $dataIdentification) {
+    affected_rows
+		returning {
+			FamilyStatus
+			Children
+		}
+  }
+  update_people_child_v0(where: {
+    PersonFestCloudID: {_eq: $personId}
+  }, _set: $dataChild) {
+    affected_rows
+		returning{
+			Name
+			Birthday
+		}
+  }
+}

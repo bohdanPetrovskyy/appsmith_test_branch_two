@@ -1,0 +1,31 @@
+mutation AddAssignment(
+  $festCloudID: String!
+  $endDate: timestamp!
+	$dismissalDate: timestamp!
+  $dismissalManagerFestCloudID: String!
+  $dismissalReason: String
+) {
+  update_people_assignment_v0(
+    where: { FestCloudID: { _eq: $festCloudID } }
+    _set: { EndDate: $endDate}
+  ) {
+    affected_rows
+    returning {
+      FestCloudID
+    }
+  }
+	update_people_assignmentext_v0(
+    where: { FestCloudID: { _eq: $festCloudID } }
+    _set: {
+      Stage: "OffboardingPending"
+			Substage: "DismissalChecklistPending",
+      DismissalDate: $dismissalDate
+      DismissalManagerFestCloudID: $dismissalManagerFestCloudID
+      DismissalReason: $dismissalReason
+    }
+  ) {
+    returning {
+      FestCloudID
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "688f7c8487c169738493a99c_f155552d-5b3b-400d-adb5-607534623eff",
+  "id": "Edit_User_family",
+  "unpublishedCollection": {
+    "name": "family",
+    "pageId": "Edit_User",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "formCounter",
+        "value": "0"
+      },
+      {
+        "name": "isFamily",
+        "value": "null"
+      }
+    ]
+  }
+}

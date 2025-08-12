@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "bottomRow": 15,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "key": "lb9hgg9anz",
+  "leftColumn": 21,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 1,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "originalBottomRow": 21,
+  "originalTopRow": 19,
+  "overflow": "NONE",
+  "parentColumnSpace": 29.875,
+  "parentId": "sv4xge7hn9",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 34,
+  "shouldTruncate": false,
+  "text": "{{utils.normalizeDate(get_all_assignment?.data?.data?.people_assignment_v0[0].StartDate, get_all_assignment?.data?.data?.people_assignment_v0[0].EndDate).fullDuration}}",
+  "textAlign": "LEFT",
+  "textColor": "#212121",
+  "topRow": 13,
+  "type": "M4_TEXT_WIDGET",
+  "typography": "body5-sb",
+  "version": 1,
+  "widgetId": "he1x2et7m6",
+  "widgetName": "experienceField1"
+}

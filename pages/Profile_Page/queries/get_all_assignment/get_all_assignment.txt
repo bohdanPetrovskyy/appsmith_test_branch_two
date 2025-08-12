@@ -1,0 +1,186 @@
+query AssignmentActualEmployeeAssignment($employeeFestCloudID: String) {
+  people_assignment_v0(where: {assignment_employeefestcloudid_employee: {FestCloudID: {_eq: $employeeFestCloudID}}}, order_by: {assignment_festcloudid_assignmentext: {Type: asc}}) {
+    FestCloudID
+    EmployeeFestCloudID
+    EndDate
+    Role
+    JobTitle
+    ManagerFestCloudId
+    StartDate
+    PositionFestCloudID
+    WorkgroupFestCloudID
+    assignment_workgroupfestcloudid_workgroup {
+      StructureType
+      FestCloudID
+      WorkgroupFestCloudID
+      Name
+      Status
+      Type
+      workgroup_workgroupfestcloudid_workgroup {
+        FestCloudID
+        WorkgroupFestCloudID
+        Name
+        Status
+        Type
+        workgroup_workgroupfestcloudid_workgroup {
+          FestCloudID
+          WorkgroupFestCloudID
+          Name
+          Status
+          Type
+        }
+      }
+    }
+    assignment_positionfestcloudid_position {
+      FestCloudID
+      PositionName
+    }
+    assignment_employeefestcloudid_employee {
+      FestCloudID
+      FirstEmploymentDate
+      PhotoLink
+      Stage
+      FirstEmploymentDate
+      employee_festcloudid_person {
+        Birthday
+        FamilyName
+        FestCloudID
+        Gender
+        MiddleName
+        Name
+        person_festcloudid_customer {
+          LoyaltyCard
+          FestCloudID
+        }
+        person_festcloudid_principal {
+          WorkEmail: contact_principalfestcloudid_array(where: {EmailType: {_eq: "Work"}}, distinct_on: Email) {
+            Email
+            FestCloudID
+          }
+          WorkPhone: contact_principalfestcloudid_array(where: {PhoneType: {_eq: "Work"}}, distinct_on: PhoneNumber) {
+            PhoneNumber
+            FestCloudID
+          }
+          PersonalEmail: contact_principalfestcloudid_array(where: {EmailType: {_eq: "Personal"}}, distinct_on: Email) {
+            Email
+            FestCloudID
+          }
+          PersonalPhone: contact_principalfestcloudid_array(where: {PhoneType: {_eq: "Personal"}}, distinct_on: PhoneNumber) {
+            PhoneNumber
+            FestCloudID
+          }
+        }
+        additionaleducation_personfestcloudid_array {
+          CourseName
+          ObtainingDate
+        }
+        CoursesCount: additionaleducation_personfestcloudid_array_aggregate {
+          aggregate {
+            count
+          }
+        }
+        identificationdata_personfestcloudid_array {
+          Children
+          MilitaryRegistration
+          FamilyStatus
+          RegistrationAdress: identificationdata_registrationaddressfestcloudid_address {
+            City
+            Street
+            Country
+            BuildingNumber
+            Apartment
+          }
+          ResidenceAdress: identificationdata_residenceaddressfestcloudid_address {
+            City
+            Street
+            Country
+            BuildingNumber
+            Apartment
+          }
+        }
+        education_personfestcloudid_array {
+          EducationalInstitution
+          SpecialtyName
+          EducationLevel
+        }
+        EducationCount: education_personfestcloudid_array_aggregate {
+          aggregate {
+            count
+          }
+        }
+        language_personfestcloudid_array {
+          Name
+          Level
+        }
+        LanguageCount: language_personfestcloudid_array_aggregate {
+          aggregate {
+            count
+          }
+        }
+        workexperience_personfestcloudid_array {
+          StartDate
+          EndDate
+          PositionName
+          CompanyName
+        }
+        WorkExperienceCount: workexperience_personfestcloudid_array_aggregate {
+          aggregate {
+            count
+          }
+        }
+        child_personfestcloudid_array {
+          Name
+          Birthday
+        }
+        ChildCount: child_personfestcloudid_array_aggregate {
+          aggregate {
+            count
+          }
+        }
+        additionalinfo_personfestcloudid_array {
+          DrivingLicense
+          CommunityBelonging
+          Interests
+        }
+      }
+    }
+    assignment_managerfestcloudid_employee {
+      employee_festcloudid_person {
+        FamilyName
+        Name
+      }
+    }
+    assignment_festcloudid_assignmentext {
+      Type
+      Stage
+      Substage
+    }
+  }
+dms_passport:dms_document_v0(where: {
+    document_festcloudid_personaliddata: {
+      PersonFestCloudID: {_eq: $employeeFestCloudID}
+    }
+  }, order_by: {AuditUpdatedAt: desc})  {
+    passport:document_festcloudid_personaliddata {
+      FestCloudID
+      DocumentNumber
+      DocumentSeries
+            AuditUpdatedAt
+            passport_document:personaliddata_festcloudid_document{
+        document_taxonomy:document_taxonomyfestcloudid_taxonomy{
+          Name
+        }
+      }
+    }
+  }
+  dms_tax:dms_document_v0(where: {
+    document_festcloudid_personaltaxdata: {
+      PersonFestCloudID: {_eq: $employeeFestCloudID}
+    }
+  }) {
+    tax:document_festcloudid_personaltaxdata{
+      FestCloudID
+      IndividualTaxpayerNumber
+    }
+  }
+}

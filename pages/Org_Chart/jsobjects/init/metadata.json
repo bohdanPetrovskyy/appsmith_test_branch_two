@@ -1,0 +1,40 @@
+{
+  "gitSyncId": "688f7c8487c169738493a99c_9d6ed5a4-d7bc-4c27-bf14-dc7b78c39b4c",
+  "id": "Org_Chart_init",
+  "unpublishedCollection": {
+    "name": "init",
+    "pageId": "Org_Chart",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "loading",
+        "value": "true"
+      },
+      {
+        "name": "currentUser",
+        "value": "null"
+      },
+      {
+        "name": "showCow",
+        "value": "false"
+      },
+      {
+        "name": "treeData",
+        "value": "[]"
+      },
+      {
+        "name": "link",
+        "value": "\"https://meta4.festcloud.ai\""
+      },
+      {
+        "name": "tokenRefresh",
+        "value": "\"https://jwt-uat.api.festcloud.ai/hasura/refresh-token\""
+      },
+      {
+        "name": "Profile_PageLink",
+        "value": "\"/uk/workspaces/7afcaeba-a984-453e-8bec-5b7df168403c/2ef74609-40bb-4657-9527-ad12bd4a45b6\""
+      }
+    ]
+  }
+}

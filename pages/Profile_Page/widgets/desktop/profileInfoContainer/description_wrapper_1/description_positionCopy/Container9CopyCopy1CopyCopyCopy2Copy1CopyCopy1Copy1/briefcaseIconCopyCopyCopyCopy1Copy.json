@@ -1,0 +1,39 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 2,
+  "boxShadow": "none",
+  "buttonColor": "#9fa2a8",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "Briefcase",
+  "iconSize": 16,
+  "iconWeight": "regular",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "vk0z8jop5q",
+  "leftColumn": 1,
+  "minWidth": 16,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 55,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 17.4697265625,
+  "parentId": "u58zoryk5r",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 2,
+  "toolTipPosition": "bottom",
+  "topRow": 1,
+  "type": "M4_ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "p9kttiojd6",
+  "widgetName": "briefcaseIconCopyCopyCopyCopy1Copy"
+}

@@ -1,0 +1,11 @@
+mutation Insert($data: [people_contact_v0_insert_input!]!){
+	insert_people_contact_v0(objects: $data) {
+    affected_rows
+    returning {
+      Email
+      EmailType
+      PhoneType
+      PhoneNumber
+    }
+  }
+}
