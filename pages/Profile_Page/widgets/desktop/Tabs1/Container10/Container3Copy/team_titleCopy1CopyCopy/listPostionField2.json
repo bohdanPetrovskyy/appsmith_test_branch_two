@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "bottomRow": 11,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "isLoading": false,
+  "isVisible": true,
+  "key": "lb9hgg9anz",
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "maxLength": "35",
+  "minDynamicHeight": 1,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 7,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "overflow": "NONE",
+  "parentColumnSpace": 19.25,
+  "parentId": "pkhc5b6jnp",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 20,
+  "shouldTruncate": false,
+  "text": "{{\n  ( get_all_assignment?.data?.data?.people_assignment_v0[1]?.JobTitle || get_all_assignment?.data?.data?.people_assignment_v0?.[1]?.assignment_positionfestcloudid_position?.PositionName \n    || 'Невизначено'\n  ) \n  + ' у ' +\n  (\n    get_all_assignment?.data?.data?.people_assignment_v0?.[1]?.assignment_workgroupfestcloudid_workgroup?.Name \n    || 'невідомій групі'\n  )\n}}\n",
+  "textAlign": "LEFT",
+  "textColor": "#212121",
+  "topRow": 8,
+  "type": "M4_TEXT_WIDGET",
+  "typography": "body3-b",
+  "version": 1,
+  "widgetId": "u8ae1wgbo4",
+  "widgetName": "listPostionField2"
+}

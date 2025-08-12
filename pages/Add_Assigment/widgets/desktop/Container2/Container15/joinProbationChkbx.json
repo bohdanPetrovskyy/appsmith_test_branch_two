@@ -1,0 +1,63 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 13,
+  "defaultCheckedState": "false",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultCheckedState"
+    },
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onCheckChange"
+    }
+  ],
+  "errorText": "",
+  "helperText": "Додати випробувальний період (стажування) для працівника та включити його у загальний період роботи",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "n7gdtdw0jg",
+  "label": "Об'єднати випробувальний період з основним часом роботи",
+  "labelPosition": "Right",
+  "labelTextColor": "#212121",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onCheckChange": "{{!joinProbationChkbx.isChecked? endProbationDate.setValue(\"\"): \"\"}}",
+  "originalBottomRow": 30,
+  "originalTopRow": 10,
+  "parentColumnSpace": 20.515625,
+  "parentId": "n0nqzhqm05",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 38,
+  "topRow": 6,
+  "type": "M4_CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "7ll3ryvmxp",
+  "widgetName": "joinProbationChkbx"
+}

@@ -1,0 +1,44 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 3,
+  "boxShadow": "none",
+  "buttonColor": "#777b82",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "iconSize"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "MapPin",
+  "iconSize": "58",
+  "iconWeight": "regular",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "tkhpv5ctkk",
+  "leftColumn": 1,
+  "minWidth": 16,
+  "mobileBottomRow": 3,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 3,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 23.734375,
+  "parentId": "zzuf7mr0tr",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 2,
+  "toolTipPosition": "bottom",
+  "topRow": 2,
+  "type": "M4_ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "0cpbjjf3zl",
+  "widgetName": "Icon4CopyCopy2Copy2"
+}

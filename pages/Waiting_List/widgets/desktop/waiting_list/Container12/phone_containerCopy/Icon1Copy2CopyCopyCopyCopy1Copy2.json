@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 2,
+  "boxShadow": "none",
+  "buttonColor": "#3b82f6",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconName": "DeviceMobileSpeaker",
+  "iconSize": 16,
+  "iconWeight": "regular",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "wgptxhrrs4",
+  "leftColumn": 0,
+  "minWidth": 16,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 27,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 15.1630859375,
+  "parentId": "dmjvkda86z",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 6,
+  "toolTipPosition": "bottom",
+  "topRow": 0,
+  "type": "M4_ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "4mzuwh18jp",
+  "widgetName": "Icon1Copy2CopyCopyCopyCopy1Copy2"
+}

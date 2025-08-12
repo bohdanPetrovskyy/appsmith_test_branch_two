@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "activeColor": "#3A77DC",
+  "animateLoading": true,
+  "borderColor": "#C4D1F4",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( get_family.data?.data?.family[0]?.FamilyStatus ? String(get_family.data?.data?.family[0]?.FamilyStatus) : \"false\"))(FamilyStatus.options, FamilyStatus.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "helperText": "",
+  "inputSize": "MEDIUM",
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "sawjlt6f90",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Сімейний стан",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 11,
+  "originalTopRow": 4,
+  "parentColumnSpace": 12.984375,
+  "parentId": "28lqozl3kr",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "requiredMode": "required",
+  "responsiveBehavior": "fill",
+  "rightColumn": 53,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n[\n  {\n    \"name\": \"Одружений/Одружена\",\n    \"code\": \"true\"\n  },\n  {\n    \"name\": \"Неодружений/Неодружена\",\n    \"code\": \"false\"\n  }\n]\n}}",
+  "topRow": 4,
+  "type": "M4_SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "f5fvtibcxk",
+  "widgetName": "FamilyStatus"
+}

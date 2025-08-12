@@ -56,7 +56,7 @@
         "key": "headers[1].value"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "get_all_dictionaryName",
     "pageId": "Content_Item",
     "userSetOnLoad": false

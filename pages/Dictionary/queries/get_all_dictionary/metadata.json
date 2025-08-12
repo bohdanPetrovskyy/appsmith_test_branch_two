@@ -59,7 +59,7 @@
         "key": "headers[1].value"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "get_all_dictionary",
     "pageId": "Dictionary",
     "userSetOnLoad": false

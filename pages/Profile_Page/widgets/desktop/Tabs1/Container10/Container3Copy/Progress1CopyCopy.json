@@ -1,0 +1,47 @@
+{
+  "borderRadius": "20px",
+  "bottomRow": 14,
+  "counterClosewise": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "progress"
+    },
+    {
+      "key": "filledDots"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fillBgColor": "#c4d1f4",
+  "fillColor": "#5d9aff",
+  "filledDots": "{{utils.normalizeDate(get_all_assignment?.data?.data?.people_assignment_v0[1].StartDate,get_all_assignment?.data?.data?.people_assignment_v0[1].EndDate).months}}",
+  "isIndeterminate": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "0isr46xqmm",
+  "leftColumn": 1,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 12.3125,
+  "parentId": "zzuf7mr0tr",
+  "parentRowSpace": 10,
+  "progress": 0,
+  "progressType": "dots",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 17,
+  "showResult": false,
+  "steps": 12,
+  "text": "місяці",
+  "textColor": "#9FA2A8",
+  "textTransform": "uppercase",
+  "topRow": 13,
+  "type": "M4_PROGRESSBAR_WIDGET",
+  "typography": "overline4",
+  "version": 1,
+  "widgetId": "e6rcvl32oi",
+  "widgetName": "Progress1CopyCopy",
+  "widgetWidth": "200px"
+}

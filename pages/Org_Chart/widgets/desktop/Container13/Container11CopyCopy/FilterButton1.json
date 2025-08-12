@@ -1,0 +1,59 @@
+{
+  "activeIconColor": "#D53939",
+  "activeItemColor": "#E3EEFF",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 2,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "hoverItemColor": "#E3EEFF",
+  "iconName": "Funnel",
+  "iconSize": 24,
+  "iconWeight": "regular",
+  "isCanvas": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "od8j2536t4",
+  "leftColumn": 48,
+  "menuColor": "transparent",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 2,
+  "mobileLeftColumn": 16,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onSelectionChange": "{{\nresetWidget('assigneesList')\ndebData.debouncedFetch()\n}}",
+  "parentColumnSpace": 20.1875,
+  "parentId": "036imgcl1j",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 50,
+  "selectedValues": [],
+  "sourceData": "{{utils.stages || [] }}",
+  "textColor": "#777B82",
+  "textHoverColor": "#ff4a43",
+  "topRow": 0,
+  "type": "M4_CHECKBOX_LIST_WIDGET",
+  "version": 1,
+  "widgetId": "25lclk0qym",
+  "widgetName": "FilterButton1"
+}
