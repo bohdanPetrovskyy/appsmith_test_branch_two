@@ -38,7 +38,7 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "get_roles_all",
     "pageId": "Add_Assigment",
     "userSetOnLoad": false
